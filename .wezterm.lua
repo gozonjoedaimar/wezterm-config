@@ -11,6 +11,8 @@ config.font = wezterm.font("DejaVuSansM Nerd Font Mono")
 config.font_size = 10.5
 config.line_height = 1.5
 config.default_prog = { "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe" }
+config.initial_cols = 180
+config.initial_rows = 30
 
 -- Keybindings
 
