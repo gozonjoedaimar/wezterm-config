@@ -8,7 +8,7 @@ local act = wezterm.action
 -- User configuration
 config.color_scheme = "Tokyo Night"
 config.font = wezterm.font("DejaVuSansM Nerd Font Mono")
-config.font_size = 10.5
+config.font_size = 10.0
 config.line_height = 1.5
 config.default_prog = { "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe" }
 config.initial_cols = 180
