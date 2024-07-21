@@ -29,6 +29,8 @@ config.keys = {
 	{ key = "l", mods = "SHIFT|ALT", action = act.AdjustPaneSize({ "Right", 5 }) },
 	-- Show the launcher in fuzzy selection mode to list and switch workspaces
 	{ key = "9", mods = "ALT", action = act.ShowLauncherArgs({ flags = "FUZZY|WORKSPACES" }) },
+	-- Select pane to swap with active pane
+	{ key = "0", mods = "ALT", action = act.PaneSelect({ mode = "SwapWithActive" }) },
 }
 
 -- and finally, return the configuration to wezterm
