@@ -31,6 +31,8 @@ config.keys = {
 	{ key = "9", mods = "ALT", action = act.ShowLauncherArgs({ flags = "FUZZY|WORKSPACES" }) },
 	-- Select pane to swap with active pane
 	{ key = "0", mods = "ALT", action = act.PaneSelect({ mode = "SwapWithActive" }) },
+	-- close active pane
+	{ key = "w", mods = "CTRL", action = act.CloseCurrentPane({ confirm = false }) },
 }
 
 -- and finally, return the configuration to wezterm
