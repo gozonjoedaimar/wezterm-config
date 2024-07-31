@@ -32,7 +32,7 @@ config.keys = {
 	-- Select pane to swap with active pane
 	{ key = "0", mods = "ALT", action = act.PaneSelect({ mode = "SwapWithActive" }) },
 	-- close active pane
-	{ key = "w", mods = "CTRL", action = act.CloseCurrentPane({ confirm = false }) },
+	{ key = "w", mods = "CTRL|SHIFT|ALT", action = act.CloseCurrentPane({ confirm = false }) },
 }
 
 -- and finally, return the configuration to wezterm
