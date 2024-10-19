@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Check if WezTerm is installed
+if ! command -v wezterm &> /dev/null; then
+    echo "WezTerm is not installed. Please install it first."
+    exit 1
+fi
+
+# Set the tab title
+TAB_TITLE="$1"
+
+if [ -z "$TAB_TITLE" ]; then
+    echo "Usage: $0 'Your Tab Title'"
+    exit 1
+fi
+
+# Command to set the tab title
+wezterm cli set-tab-title "$TAB_TITLE"
+
