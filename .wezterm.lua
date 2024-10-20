@@ -10,10 +10,10 @@ config.color_scheme = "Tokyo Night"
 config.initial_cols = 150
 config.initial_rows = 40
 
--- Use for render
+-- Render mode
 -- config.front_end = "OpenGL"
 
--- Nerdfont Example
+-- Nerdfont
 -- config.font = wezterm.font("DejaVuSansM Nerd Font Mono")
 
 -- Windows Config
