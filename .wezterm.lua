@@ -12,6 +12,7 @@ config.initial_rows = 40
 
 -- Render mode
 -- config.front_end = "WebGpu"
+-- Available options: "Software", "WebGpu", "OpenGL"
 
 -- Nerdfont
 -- config.font = wezterm.font("DejaVuSansM Nerd Font Mono")
@@ -19,7 +20,7 @@ config.initial_rows = 40
 -- Windows Config
 -- config.default_prog = { "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe" }
 -- config.font_size = 11.0
--- config.line_height = 1.2
+-- config.line_height = 1.25
 
 -- Keybindings
 
