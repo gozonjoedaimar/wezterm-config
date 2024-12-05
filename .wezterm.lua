@@ -26,10 +26,10 @@ config.initial_rows = 40
 
 config.keys = {
 	-- Pane navigation
-	{ key = "h", mods = "ALT", action = act.ActivatePaneDirection("Left") },
-	{ key = "l", mods = "ALT", action = act.ActivatePaneDirection("Right") },
-	{ key = "k", mods = "ALT", action = act.ActivatePaneDirection("Up") },
-	{ key = "j", mods = "ALT", action = act.ActivatePaneDirection("Down") },
+	{ key = "h", mods = "CTRL", action = act.ActivatePaneDirection("Left") },
+	{ key = "l", mods = "CTRL", action = act.ActivatePaneDirection("Right") },
+	{ key = "k", mods = "CTRL", action = act.ActivatePaneDirection("Up") },
+	{ key = "j", mods = "CTRL", action = act.ActivatePaneDirection("Down") },
 	-- Adjust pane size
 	{ key = "h", mods = "SHIFT|ALT", action = act.AdjustPaneSize({ "Left", 5 }) },
 	{ key = "j", mods = "SHIFT|ALT", action = act.AdjustPaneSize({ "Down", 5 }) },
@@ -41,6 +41,8 @@ config.keys = {
 	{ key = "0", mods = "ALT", action = act.PaneSelect({ mode = "SwapWithActive" }) },
 	-- close active pane
 	{ key = "w", mods = "CTRL|SHIFT|ALT", action = act.CloseCurrentPane({ confirm = false }) },
+	-- activate copy mode
+	{ key = "[", mods = "CTRL", action = act.ActivateCopyMode },
 }
 
 -- and finally, return the configuration to wezterm
