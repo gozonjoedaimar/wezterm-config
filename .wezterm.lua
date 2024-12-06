@@ -26,10 +26,10 @@ config.initial_rows = 40
 
 config.keys = {
 	-- Pane navigation
-	{ key = "h", mods = "CTRL", action = act.ActivatePaneDirection("Left") },
-	{ key = "l", mods = "CTRL", action = act.ActivatePaneDirection("Right") },
-	{ key = "k", mods = "CTRL", action = act.ActivatePaneDirection("Up") },
-	{ key = "j", mods = "CTRL", action = act.ActivatePaneDirection("Down") },
+	{ key = "h", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Left") },
+	{ key = "l", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Right") },
+	{ key = "k", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Up") },
+	{ key = "j", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Down") },
 	-- Adjust pane size
 	{ key = "h", mods = "SHIFT|ALT", action = act.AdjustPaneSize({ "Left", 5 }) },
 	{ key = "j", mods = "SHIFT|ALT", action = act.AdjustPaneSize({ "Down", 5 }) },
