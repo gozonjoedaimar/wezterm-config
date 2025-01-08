@@ -13,6 +13,8 @@ config.initial_rows = 40
 -- Render mode
 -- config.front_end = "WebGpu"
 -- Available options: "Software", "WebGpu", "OpenGL"
+-- Max fps: default 60
+-- config.max_fps = 90
 
 -- Nerdfont
 -- config.font = wezterm.font("DejaVuSansM Nerd Font Mono")
