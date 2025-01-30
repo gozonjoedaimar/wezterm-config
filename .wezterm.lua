@@ -1,6 +1,11 @@
 -- Pull in the wezterm API
 local wezterm = require("wezterm")
 
+-- Window title behavior
+wezterm.on("format-window-title", function(tab)
+	return tab.tab_title or tab.active_pane.title
+end)
+
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 local act = wezterm.action
