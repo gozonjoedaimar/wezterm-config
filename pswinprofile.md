@@ -1,6 +1,12 @@
 # Windows PowerShell Prompt formatting
 
 ```powershell
+# How to add to your ps profile
+# edit you ps profile via
+# nvim $profile # or
+# code $profile
+# and add the following
+
 function prompt {
   $basename = Split-Path -Path (Get-Location) -Leaf
 
